@@ -2,7 +2,7 @@
 
 **An open orchestrator for the Claude Skills catalog.** Built by [RampStack](https://rampstack.co).
 
-Tholo reads the [claude-skills](https://github.com/rampstackco/claude-skills) catalog, plans a build task, and selects only the skills the task needs, then prepares the work to hand to Claude Code. It turns a large skill library from a pile of files into a working build system, and it removes the two problems a big catalog creates: skills clashing with each other, and context bloat from loading more than the task needs.
+Tholo is an open orchestrator for the Claude Skills catalog, built by RampStack. It reads the [claude-skills](https://github.com/rampstackco/claude-skills) catalog, plans a build task, and selects only the skills the task needs, then prepares the work to hand to Claude Code. It turns a large skill library from a pile of files into a working build system, and it removes the two problems a big catalog creates: skills clashing with each other, and context bloat from loading more than the task needs.
 
 This repository documents what Tholo does and shows worked examples. The orchestrator is operated by RampStack.
 
