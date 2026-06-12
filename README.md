@@ -12,7 +12,7 @@ This repository documents what Tholo does and shows worked examples. The orchest
 
 A skill catalog that grows past a few dozen entries develops two failures. Skills start to clash, more than one looks applicable and they pull the work in different directions. And loading the whole catalog to do one task floods the context with skills the task will never use.
 
-Tholo addresses both by selecting. Given a task, it scores the catalog against it, honors each skill's own stated boundaries to de-conflict overlaps, and returns the small relevant set, not the whole library. When a task is too broad to narrow, it says so rather than dumping everything. When nothing fits, it says that rather than forcing a pick.
+Tholo addresses both by selecting. Given a task, it weighs the catalog against it, honors each skill's own stated boundaries to de-conflict overlaps, and returns the small relevant set, not the whole library. When a task is too broad to narrow, it says so rather than dumping everything. When nothing fits, it says that rather than forcing a pick.
 
 ---
 
@@ -33,6 +33,13 @@ The through-line: Tholo does the planning and selection, and stops at the two po
 - [Audit and fix SEO](examples/tholo-audit-and-fix.md) - a multi-step task where one step comes back ambiguous and Tholo stops the plan rather than guess.
 
 Each example shows the plan Tholo produces and, as much as the result itself, where it stops.
+
+---
+
+## Artifacts and schemas
+
+- [`examples/`](examples/) holds the worked examples and one real persisted run: [build a landing page for a new product](examples/build-a-landing-page-for-a-new-product-2026-06-12T05-03-31-067Z.public.md), captured verbatim from the operated engine planning that goal.
+- [`schemas/`](schemas/) holds the shape of the public plan artifact as annotated types, for building against the engine's outputs. The types carry only what the published artifacts already show.
 
 ---
 
