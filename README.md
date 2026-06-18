@@ -36,6 +36,32 @@ Each example shows the plan Tholo produces and, as much as the result itself, wh
 
 ---
 
+## Getting started
+
+1. Read the framework above: how Tholo plans a task, selects per step against the catalog, and stops at narrowing and at the execute seam.
+2. Pick the worked example that matches your task from [`examples/`](examples/), the single-step build or the multi-step audit-and-fix, to see the plan shape and where it stops.
+3. Run the operated orchestrator at [rampstack.co/tholo](https://rampstack.co/tholo) against your build task and read the plan it returns.
+4. Read or build against that plan: follow the selected skills and the prepared dispatch in your own Claude Code session, and own the execute decision Tholo hands back.
+
+---
+
+## Quick examples
+
+A curated entry point into [`examples/`](examples/). Open the one closest to your task first.
+
+- [Build a landing page](examples/tholo-landing-page.md) - a single-step task with one selected skill, a ready plan, and the execute-seam stop.
+- [Audit and fix SEO](examples/tholo-audit-and-fix.md) - a multi-step task where one step comes back ambiguous and Tholo stops the plan rather than guess.
+
+Tholo is one of three engines RampStack runs against the same catalog: [Krine](https://github.com/rampstackco/krine) decides, Tholo builds, [Basano](https://github.com/rampstackco/basano) proves. On the SEO thread, Tholo produces the audit-and-fix plan and Basano verifies the AEO and GEO result on the page.
+
+---
+
+## Using the outputs
+
+Building against a Tholo run? The plan shape is documented in [`schemas/plan.ts`](schemas/plan.ts) as annotated types, carrying only what the published plans already show.
+
+---
+
 ## Artifacts and schemas
 
 - [`examples/`](examples/) holds the worked examples and one real persisted run: [build a landing page for a new product](examples/build-a-landing-page-for-a-new-product-2026-06-12T05-03-31-067Z.public.md), captured verbatim from the operated engine planning that goal.
