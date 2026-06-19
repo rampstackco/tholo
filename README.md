@@ -27,15 +27,6 @@ The through-line: Tholo does the planning and selection, and stops at the two po
 
 ---
 
-## Worked examples
-
-- [Build a landing page](examples/tholo-landing-page.md) - a single-step task: one clear skill, a ready plan, and the execute-seam stop.
-- [Audit and fix SEO](examples/tholo-audit-and-fix.md) - a multi-step task where one step comes back ambiguous and Tholo stops the plan rather than guess.
-
-Each example shows the plan Tholo produces and, as much as the result itself, where it stops.
-
----
-
 ## Getting started
 
 1. Read the framework above: how Tholo plans a task, selects per step against the catalog, and stops at narrowing and at the execute seam.
@@ -51,6 +42,7 @@ A curated entry point into [`examples/`](examples/). Open the one closest to you
 
 - [Build a landing page](examples/tholo-landing-page.md) - a single-step task with one selected skill, a ready plan, and the execute-seam stop.
 - [Audit and fix SEO](examples/tholo-audit-and-fix.md) - a multi-step task where one step comes back ambiguous and Tholo stops the plan rather than guess.
+- [Plan a new-product landing page](examples/build-a-landing-page-for-a-new-product-2026-06-12T05-03-31-067Z.public.md) - a real persisted run, captured verbatim from the operated engine planning that goal.
 
 Tholo is one of three engines RampStack runs against the same catalog: [Krine](https://github.com/rampstackco/krine) decides, Tholo builds, [Basano](https://github.com/rampstackco/basano) proves. On the SEO thread, Tholo produces the audit-and-fix plan and Basano verifies the AEO and GEO result on the page.
 
@@ -59,13 +51,6 @@ Tholo is one of three engines RampStack runs against the same catalog: [Krine](h
 ## Using the outputs
 
 Building against a Tholo run? The plan shape is documented in [`schemas/plan.ts`](schemas/plan.ts) as annotated types, carrying only what the published plans already show.
-
----
-
-## Artifacts and schemas
-
-- [`examples/`](examples/) holds the worked examples and one real persisted run: [build a landing page for a new product](examples/build-a-landing-page-for-a-new-product-2026-06-12T05-03-31-067Z.public.md), captured verbatim from the operated engine planning that goal.
-- [`schemas/`](schemas/) holds the shape of the public plan artifact as annotated types, for building against the engine's outputs. The types carry only what the published artifacts already show.
 
 ---
 
